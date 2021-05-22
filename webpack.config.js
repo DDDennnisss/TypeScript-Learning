@@ -1,4 +1,6 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 // webpack所有的配置信息都要写在module.export里
 module.exports = {
@@ -20,6 +22,16 @@ module.exports = {
         exclude: /node-modules/
       }
     ]
-  }
+  },
 
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HTMLWebpackPlugin({
+      template: "./src/index.html"
+    }),
+  ],
+
+  resolve: {
+    extensions: ['.ts', ".js"]
+  }
 }
