@@ -1,5 +1,8 @@
+//引入一个包
 const path = require('path');
+//引入html插件
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+//引入clean插件
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 // webpack所有的配置信息都要写在module.export里
@@ -33,5 +36,7 @@ module.exports = {
 
   resolve: {
     extensions: ['.ts', ".js"]
-  }
+  },
+
+
 }
