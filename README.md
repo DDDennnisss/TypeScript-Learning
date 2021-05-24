@@ -18,6 +18,9 @@ name: string;
 age: number;
 }
 
-3. 属性的封装: public
+3. 属性的封装: public //message.ts 里
    private: 只能在类里访问
+   protect: 只能在当前类和当前类的子类中使用
    ...
+
+4. 泛型： 定义函数或者类时， 如果遇到类型不明确就可以使用泛型 //generic.ts 里
