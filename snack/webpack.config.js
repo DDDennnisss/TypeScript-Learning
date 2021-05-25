@@ -13,7 +13,12 @@ module.exports = {
   // 指定打包文件目录
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "bundle.js"
+    filename: "bundle.js",
+
+    environment: {
+      arrowFunction: false,
+      const: false,
+    }
   },
 
   module: {

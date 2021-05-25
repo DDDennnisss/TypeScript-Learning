@@ -1,3 +1,3 @@
 import './style/index.less';
-
-console.log(123)
+import Food from './modules/Food';
+import ScorePanel from './modules/ScorePanel';
