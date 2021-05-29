@@ -15,7 +15,7 @@ class ScorePanel{
     this.upScore = upScore;
   }
 
-  addscore(){
+  addScore(){
     this.scoreEle.innerHTML = ++this.score + '';
 
     if(this.score%10 === 0){
@@ -25,7 +25,9 @@ class ScorePanel{
 
   levelUp(){
     if(this.level < this.maxLevel){
-      this.levelEle.innerHTML = ++this.score + '';
+      this.levelEle.innerHTML = ++this.level + '';
     }
   }
 }
+
+export default ScorePanel;
