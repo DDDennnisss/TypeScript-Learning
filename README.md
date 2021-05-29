@@ -1,4 +1,4 @@
-## TypeScript Learn
+## TypeScript Learning
 
 A repo to learn TypeScript.
 
